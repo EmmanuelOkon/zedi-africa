@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchArticleDetails, setCurrentPage } from "./Logic/actions";
-import "../tailwind.output.css";
+import { fetchArticleDetails, setCurrentPage } from "./logic/actions";
+import "././index.css";
+// import "./tailwind.output.css";
 import { useNavigate } from "react-router-dom";
 
 const App = () => {
@@ -123,8 +124,8 @@ const App = () => {
   return (
     <div className="p-4">
       <div className="text-center mx-auto max-w-4xl w-full">
-        <h1 className="font-bold text-3xl">Hello Emmanuel</h1>
-        <h2 className="text-xl">Heres a starter code for your task</h2>
+        <h1 className="font-bold text-3xl">Zedi Africa Users</h1>
+        <h2 className="text-xl">Here is a list of Zedi Users in Africa</h2>
       </div>
       <main>{renderTable()}</main>
     </div>

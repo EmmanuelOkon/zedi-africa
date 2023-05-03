@@ -1,8 +1,9 @@
-import { createStore, applyMiddleware, compose, combineReducers } from "redux";
+import { applyMiddleware, compose, combineReducers } from "redux";
+import { legacy_createStore as createStore } from "redux";
 import { logger } from "redux-logger";
 import thunk from "redux-thunk";
-import { userReducer } from "../reducers";
-import { apiMiddleware } from "../middleware/api";
+import userReducer from "../reducers";
+import apiMiddleware from "../middleware/api";
 
 const rootReducer = combineReducers({
   userReducer,
